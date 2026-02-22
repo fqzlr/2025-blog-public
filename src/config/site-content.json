@@ -1,8 +1,8 @@
 {
 	"meta": {
-		"title": "YYsuni",
-		"description": "YYsuni 的个人博客，记录前端开发、探索、笔记。前端 UI 更新代码仓库。",
-		"username": "Suni"
+		"title": "fqzlr’s blog",
+		"description": "fqzlr 的个人博客，记录前端开发、探索、笔记。前端 UI 更新代码仓库。",
+		"username": "fqzlr"
 	},
 	"theme": {
 		"colorBrand": "#de4331",
@@ -58,7 +58,7 @@
 		{
 			"id": "email",
 			"type": "email",
-			"value": "yysuni1001@gmail.com",
+			"value": "a20447289@outlook.com",
 			"label": "",
 			"order": 1
 		}
