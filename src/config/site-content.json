@@ -32,7 +32,7 @@
 			"url": "/images/art/a46372ff45bc5524.jpg"
 		}
 	],
-	"currentArtImageId": "a46372ff45bc5524",
+	"currentArtImageId": "cat",
 	"backgroundImages": [
 		{
 			"id": "",
@@ -44,14 +44,14 @@
 		{
 			"id": "github",
 			"type": "github",
-			"value": "https://github.com/yysuni",
+			"value": "https://github.com/fqzlr",
 			"label": "Github",
 			"order": 3
 		},
 		{
 			"id": "juejin",
-			"type": "juejin",
-			"value": "https://juejin.cn/user/2427311675422382",
+			"type": "qq",
+			"value": "/images/social-buttons/1ad9e6dcc2b8ef6f.png",
 			"label": "稀土掘金",
 			"order": 2
 		},
@@ -61,6 +61,20 @@
 			"value": "a20447289@outlook.com",
 			"label": "",
 			"order": 1
+		},
+		{
+			"id": "button-1771748810785",
+			"type": "bilibili",
+			"value": "https://space.bilibili.com/2017273493",
+			"label": "",
+			"order": 4
+		},
+		{
+			"id": "button-1771748835747",
+			"type": "link",
+			"value": "https://fqzlr.top",
+			"label": "博客",
+			"order": 5
 		}
 	],
 	"clockShowSeconds": false,
