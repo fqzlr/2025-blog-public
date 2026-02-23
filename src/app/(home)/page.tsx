@@ -19,6 +19,7 @@ import { toast } from 'sonner'
 import ConfigDialog from './config-dialog/index'
 import { useEffect } from 'react'
 import SnowfallBackground from '@/layout/backgrounds/snowfall'
+import CommentPosition from './comment-position'
 
 export default function Home() {
 	const { maxSM } = useSize()
@@ -88,6 +89,8 @@ export default function Home() {
 				{cardStyles.likePosition?.enabled !== false && <LikePosition />}
 				{cardStyles.hatCard?.enabled !== false && <HatCard />}
 				{cardStyles.beianCard?.enabled !== false && <BeianCard />}
+				{cardStyles.commentPosition?.enabled !== false && <CommentPosition />}
+   
 			</div>
 
 			{siteContent.enableChristmas && <SnowfallBackground zIndex={2} count={!maxSM ? 125 : 20} />}
