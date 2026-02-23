@@ -44,12 +44,6 @@ const list = [
 		href: '/about'
 	},
 	{
-		icon: AboutOutlineSVG,
-		iconActive: AboutFilledSVG,
-		label: '关于我',
-		href: '/about'
-	},
-	{
 		icon: ShareOutlineSVG,
 		iconActive: ShareFilledSVG,
 		label: '推荐分享',
