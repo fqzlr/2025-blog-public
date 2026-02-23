@@ -23,32 +23,38 @@
     			: center.y + hiCardStyles.height / 2 + CARD_SPACING + socialButtonsStyles.height + CARD_SPACING + musicCardStyles.height + CARD_SPACING
 
    	return (
-    		<HomeDraggableLayer cardKey='commentPosition' x={x} y={y} width={styles.width} height={styles.height}>
-    			<motion.div className='absolute max-sm:static' initial={{ left: x, top: y }} animate={{ left: x, top: y }}>
-    				{siteContent.enableChristmas && (
-    					<>
-    						<img
-    							src='/images/christmas/snow-13.webp'
-    							alt='Christmas decoration'
-    							className='pointer-events-none absolute'
-    							style={{ width: 40, left: -4, top: -4, opacity: 0.9 }}
-    						/>
-    					</>
-    				)}
 
-    				<motion.a
-    					href='https://waline.682000.xyz'
-    					target='_blank'
-    					rel='noreferrer'
-    					initial={{ opacity: 0, scale: 0.6 }}
-    					animate={{ opacity: 1, scale: 1 }}
-    					whileHover={{ scale: 1.05 }}
-    					whileTap={{ scale: 0.95 }}
-    					title='查看本站评论'
-    					className='card relative overflow-visible rounded-full p-3 bg-card flex h-[53px] w-[53px] items-center justify-center border hover:bg-gray-50 transition-colors'>
-    						<span className='text-lg'>💬</span>
-    				</motion.a>
-    			</motion.div>
-    		</HomeDraggableLayer>
+			<HomeDraggableLayer cardKey='likePosition' x={x} y={y} width={styles.width} height={styles.height}>
+				// ▼▼▼ 新增：添加移动端内联样式容器 ▼▼▼
+				<div className='max-sm:inline-block'>
+					<motion.div className='absolute max-sm:static' initial={{ left: x, top: y }} animate={{ left: x, top: y }}>
+									{siteContent.enableChristmas && (
+										<>
+											<img
+												src='/images/christmas/snow-13.webp'
+												alt='Christmas decoration'
+												className='pointer-events-none absolute'
+												style={{ width: 40, left: -4, top: -4, opacity: 0.9 }}
+											/>
+										</>
+									)}
+
+									<motion.a
+										href='https://waline.682000.xyz'
+										target='_blank'
+										rel='noreferrer'
+										initial={{ opacity: 0, scale: 0.6 }}
+										animate={{ opacity: 1, scale: 1 }}
+										whileHover={{ scale: 1.05 }}
+										whileTap={{ scale: 0.95 }}
+										title='查看本站评论'
+										className='card relative overflow-visible rounded-full p-3 bg-card flex h-[53px] w-[53px] items-center justify-center border hover:bg-gray-50 transition-colors'>
+											<span className='text-lg'>💬</span>
+									</motion.a>
+					</motion.div>
+				</div>
+				// ▲▲▲ 新增结束 ▲▲▲
+			</HomeDraggableLayer>
+
     	)
    }

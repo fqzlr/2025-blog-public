@@ -97,6 +97,15 @@
 		"offsetY": -168,
 		"enabled": false
 	},
+	"commentPosition": {
+		"width": 54,
+		"height": 54,
+		"order": 8,
+		"offsetX": 581,
+		"offsetY": 282,
+		"enabled": true
+   },
+
 	"beianCard": {
 		"width": 200,
 		"height": 60,

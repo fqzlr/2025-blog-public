@@ -86,11 +86,13 @@ export default function Home() {
 				{!maxSM && cardStyles.shareCard?.enabled !== false && <ShareCard />}
 				{cardStyles.articleCard?.enabled !== false && <AritcleCard />}
 				{!maxSM && cardStyles.writeButtons?.enabled !== false && <WriteButtons />}
-				{cardStyles.likePosition?.enabled !== false && <LikePosition />}
 				{cardStyles.hatCard?.enabled !== false && <HatCard />}
 				{cardStyles.beianCard?.enabled !== false && <BeianCard />}
 				{cardStyles.commentPosition?.enabled !== false && <CommentPosition />}
-   
+				<div className='max-sm:flex max-sm:flex-row max-sm:gap-6'>
+				{cardStyles.likePosition?.enabled !== false && <LikePosition />}
+				{cardStyles.commentPosition?.enabled !== false && <CommentPosition />}
+				</div>
 			</div>
 
 			{siteContent.enableChristmas && <SnowfallBackground zIndex={2} count={!maxSM ? 125 : 20} />}
