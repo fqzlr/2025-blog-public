@@ -9,7 +9,7 @@ import { loadBlog, type BlogConfig } from '@/lib/load-blog'
 import { useReadArticles } from '@/hooks/use-read-articles'
 import LiquidGrass from '@/components/liquid-grass'
 // 👇 1. 新增：导入评论组件
-import WalineComments from '@/components/WalineComments'
+import WalineComments from '@/components/WalineComments.jsx'
 
 export default function Page() {
 	const params = useParams() as { id?: string | string[] }
