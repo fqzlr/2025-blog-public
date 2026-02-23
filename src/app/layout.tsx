@@ -41,7 +41,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
 			<Head />
 			
 			<body>
-				<script defer src="https://umami.hdxiaoke.top/script.js" data-website-id="1cc38107-c89e-4b33-9ec2-e1ef333293dc"></script>
+				<script defer src="https://blog.fqzlr.top/script.js" data-website-id="1cc38107-c89e-4b33-9ec2-e1ef333293dc"></script>
 				<script
 					dangerouslySetInnerHTML={{
 						__html: `
