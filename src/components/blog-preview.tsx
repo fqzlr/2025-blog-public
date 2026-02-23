@@ -6,6 +6,8 @@ import { useMarkdownRender } from '@/hooks/use-markdown-render'
 import { useSize } from '@/hooks/use-size'
 import { BlogSidebar } from '@/components/blog-sidebar'
 import { useConfigStore } from '@/app/(home)/stores/config-store'
+// 👇 1. 导入 Waline 评论组件（保留 .jsx 扩展名）
+import WalineComments from './WalineComments.jsx'
 
 type BlogPreviewProps = {
 	markdown: string
@@ -48,6 +50,13 @@ export function BlogPreview({ markdown, title, tags, date, summary, cover, slug 
 					{summary && summaryInContent && <div className='text-secondary mt-6 cursor-text text-center text-sm'>“{summary}”</div>}
 
 					<div className='prose mt-6 max-w-none cursor-text'>{content}</div>
+
+					{/* 👇 2. 把评论组件放在 article 内部，文章内容的最后 */}
+					{slug && (
+						<div className='mt-12 pt-8 border-t border-border'>
+							<WalineComments path={`/blog/${slug}`} />
+						</div>
+					)}
 				</div>
 			</motion.article>
 

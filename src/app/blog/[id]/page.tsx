@@ -8,8 +8,6 @@ import { BlogPreview } from '@/components/blog-preview'
 import { loadBlog, type BlogConfig } from '@/lib/load-blog'
 import { useReadArticles } from '@/hooks/use-read-articles'
 import LiquidGrass from '@/components/liquid-grass'
-// 👇 1. 新增：导入评论组件
-import WalineComments from '@/components/WalineComments.jsx'
 
 export default function Page() {
 	const params = useParams() as { id?: string | string[] }
@@ -97,8 +95,6 @@ export default function Page() {
 
 			{slug === 'liquid-grass' && <LiquidGrass />}
 			
-			{/* 👇 2. 新增：渲染评论组件，放在文章最下方 */}
-			<WalineComments path={`/blog/${slug}`} />
 		</>
 	)
 }
