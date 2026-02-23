@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-
+import '@/styles/waline.css' // 👇 新增：全局引入 Waline 自定义样式
 import type { Metadata } from 'next'
 import Layout from '@/layout'
 import Head from '@/layout/head'
