@@ -17,7 +17,7 @@ export default function WalineComments({ path }) {
     // 初始化 Waline
     walineInstanceRef.current = init({
       el: containerRef.current,
-      serverURL: 'https://comments.hdxiaoke.top', // 您的 Waline 服务地址
+      serverURL: 'https://waline.682000.xyz ', // 您的 Waline 服务地址
       path: path || window.location.pathname, // 文章路径
       lang: 'zh-CN', // 语言
       dark: 'auto', // 暗色模式跟随系统
