@@ -8,7 +8,7 @@ import { BlogPreview } from '@/components/blog-preview'
 import { loadBlog, type BlogConfig } from '@/lib/load-blog'
 import { useReadArticles } from '@/hooks/use-read-articles'
 import LiquidGrass from '@/components/liquid-grass'
-// 👇 1. 导入评论组件
+// 👇 1. 新增：导入评论组件
 import WalineComments from '@/components/WalineComments'
 
 export default function Page() {
@@ -20,6 +20,9 @@ export default function Page() {
 	const [blog, setBlog] = useState<{ config: BlogConfig; markdown: string; cover?: string } | null>(null)
 	const [error, setError] = useState<string | null>(null)
 	const [loading, setLoading] = useState<boolean>(true)
+
+	// 👇 新增：获取当前页面域名（解决 cover 图片路径问题）
+	const origin = typeof window !== 'undefined' ? window.location.origin : ''
 
 	useEffect(() => {
 		let cancelled = false
@@ -94,6 +97,8 @@ export default function Page() {
 
 			{slug === 'liquid-grass' && <LiquidGrass />}
 			
+			{/* 👇 2. 新增：渲染评论组件，放在文章最下方 */}
+			<WalineComments path={`/blog/${slug}`} />
 		</>
 	)
 }
