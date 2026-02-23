@@ -25,7 +25,6 @@
    	return (
 
 			<HomeDraggableLayer cardKey='likePosition' x={x} y={y} width={styles.width} height={styles.height}>
-				// ▼▼▼ 新增：添加移动端内联样式容器 ▼▼▼
 				<div className='max-sm:inline-block'>
 					<motion.div className='absolute max-sm:static' initial={{ left: x, top: y }} animate={{ left: x, top: y }}>
 									{siteContent.enableChristmas && (
@@ -53,7 +52,6 @@
 									</motion.a>
 					</motion.div>
 				</div>
-				// ▲▲▲ 新增结束 ▲▲▲
 			</HomeDraggableLayer>
 
     	)
