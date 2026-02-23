@@ -1,18 +1,18 @@
 {
 	"artCard": {
-		"width": 360,
-		"height": 200,
+		"width": 366,
+		"height": 218,
 		"order": 3,
-		"offsetX": -189,
-		"offsetY": -380,
+		"offsetX": -193,
+		"offsetY": -48,
 		"enabled": true
 	},
 	"hiCard": {
-		"width": 360,
-		"height": 288,
+		"width": 363,
+		"height": 293,
 		"order": 1,
-		"offsetX": -189,
-		"offsetY": -145,
+		"offsetX": -193,
+		"offsetY": -354,
 		"enabled": true
 	},
 	"clockCard": {
@@ -33,20 +33,20 @@
 		"enabled": true
 	},
 	"musicCard": {
-		"width": 316,
+		"width": 358,
 		"height": 50,
 		"offset": 120,
 		"order": 6,
-		"offsetX": -190,
-		"offsetY": 265,
+		"offsetX": -183,
+		"offsetY": 271,
 		"enabled": true
 	},
 	"socialButtons": {
 		"width": 315,
 		"height": 48,
 		"order": 6,
-		"offsetX": -160,
-		"offsetY": 186,
+		"offsetX": -134,
+		"offsetY": 198,
 		"enabled": true
 	},
 	"shareCard": {
@@ -85,8 +85,8 @@
 		"width": 54,
 		"height": 54,
 		"order": 8,
-		"offsetX": 153,
-		"offsetY": 262,
+		"offsetX": 580,
+		"offsetY": 217,
 		"enabled": true
 	},
 	"hatCard": {
@@ -104,8 +104,7 @@
 		"offsetX": 581,
 		"offsetY": 282,
 		"enabled": true
-   },
-
+	},
 	"beianCard": {
 		"width": 200,
 		"height": 60,
