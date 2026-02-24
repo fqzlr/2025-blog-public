@@ -39,11 +39,11 @@
 			"url": ""
 		},
 		{
-			"id": "url-1771948919243",
-			"url": "https://tu.fqzlr.top/random?type=img&dir=mn_background&orientation=landscape"
+			"id": "url-1771948981139",
+			"url": "<img src=\"https://tu.fqzlr.top/random?type=img&dir=mn_background&orientation=landscape\" alt=\"随机背景\">"
 		}
 	],
-	"currentBackgroundImageId": "url-1771948919243",
+	"currentBackgroundImageId": "url-1771948981139",
 	"socialButtons": [
 		{
 			"id": "github",
