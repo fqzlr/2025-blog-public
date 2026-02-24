@@ -37,9 +37,13 @@
 		{
 			"id": "",
 			"url": ""
+		},
+		{
+			"id": "url-1771948919243",
+			"url": "https://tu.fqzlr.top/random?type=img&dir=mn_background&orientation=landscape"
 		}
 	],
-	"currentBackgroundImageId": "",
+	"currentBackgroundImageId": "url-1771948919243",
 	"socialButtons": [
 		{
 			"id": "github",
