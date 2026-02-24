@@ -26,5 +26,12 @@
 		"url": "https://blog.hehouhui.cn/",
 		"description": "折腾 blog 的后端，是个后端学习的榜样，折腾了这么多年。网站弄得还挺好的，就是加载内容有点慢。",
 		"stars": 3
+	},
+	{
+		"name": "amis",
+		"avatar": "https://www.amisblog.cn/images/avatar.png",
+		"url": "https://www.amisblog.cn/",
+		"description": "https://www.amisblog.cn/",
+		"stars": 5
 	}
 ]
